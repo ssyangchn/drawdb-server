@@ -1,0 +1,31 @@
+# 依赖目录（由容器内的 npm install 重新安装，避免平台不兼容）
+node_modules
+npm-debug.log*
+yarn-error.log*
+
+# 构建产物与缓存
+dist
+build
+.eslintcache
+.prettiercache
+
+# 环境配置文件（敏感信息，切勿打进镜像，应通过 Docker 环境变量或 volume 注入）
+.env
+.env.local
+.env.*.local
+
+# 版本控制与 IDE 配置文件
+.git
+.gitignore
+.github
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 操作系统临时文件
+.DS_Store
+Thumbs.db
